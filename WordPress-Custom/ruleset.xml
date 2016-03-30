@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress-Custom">
+	<description>Custom WordPress Coding Standards</description>
+
+	<rule ref="WordPress">
+		<!-- Exclude rules for WordPress VIP -->
+		<exclude name="WordPress.VIP"/>
+
+		<!-- Exclude rule for Yoda conditions -->
+		<exclude name="WordPress.PHP.YodaConditions.NotYoda"/>
+
+		<!-- Exclude rule for custom code indentation -->
+		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact"/>
+
+		<!-- Exclude rule for multiple php statements on the same line -->
+		<exclude name="Generic.Formatting.DisallowMultipleStatements.SameLine"/>
+
+		<!-- Exclude rule for multiple empty lines in functions -->
+		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines"/>
+
+		<!-- Exclude rule for multiple empty lines after the file comment -->
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
+	</rule>
+</ruleset>
