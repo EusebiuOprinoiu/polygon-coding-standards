@@ -3,9 +3,6 @@
 	<description>Custom WordPress Coding Standards</description>
 
 	<rule ref="WordPress">
-		<!-- Exclude rules for WordPress VIP -->
-		<exclude name="WordPress.VIP"/>
-
 		<!-- Exclude rule for Yoda conditions -->
 		<exclude name="WordPress.PHP.YodaConditions.NotYoda"/>
 
