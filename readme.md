@@ -1,7 +1,7 @@
 # Polygon Coding Standards
 
 This is a simple PHP Coding Standards ruleset based on the WordPress Coding Standards. It includes all the important rules defined in the WordPress Handbook.
-By default, the WordPress Coding Standards includes WordPress-Core, WordPress-Docs, WordPress-Extra and WordPress-VIP. This ruleset excludes WordPress VIP and a few minor rules like:
+By default, the WordPress Coding Standards includes WordPress-Core, WordPress-Docs and WordPress-Extra. This ruleset excludes a few minor rules like:
 
 - Use Yoda conditions
 - Each PHP statement must be on a line by itself
