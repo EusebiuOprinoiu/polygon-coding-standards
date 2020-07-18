@@ -6,6 +6,9 @@
 		<!-- Exclude rule for Yoda conditions -->
 		<exclude name="WordPress.PHP.YodaConditions.NotYoda"/>
 
+		<!-- Exclude rule for missing translators comment -->
+		<exclude name="WordPress.WP.I18n.MissingTranslatorsComment"/>
+
 		<!-- Exclude rule for custom code indentation -->
 		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact"/>
 
