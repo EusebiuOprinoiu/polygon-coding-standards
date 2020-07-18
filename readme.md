@@ -9,3 +9,14 @@ By default, the WordPress Coding Standards includes WordPress-Core, WordPress-Do
 - Line indented incorrectly; expected x tabs, found y
 - Functions must not contain multiple empty lines in a row
 - There must be exactly one empty line after the file comment
+
+If you need to disable or exclude certain rules while writing code, use the following comments:
+
+- // phpcs:ignore
+- // phpcs:enable
+- // phpcs:disable
+
+To disable the coding standards for an entire file, add one of the comments below at the top of your file.
+
+- // phpcs:ignoreFile
+- // phpcs:ignoreFile -- reason to ignore
