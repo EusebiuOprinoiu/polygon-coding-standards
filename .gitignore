@@ -1,5 +1,12 @@
+# Folders that will be ignored by Git
+/third-party
+/composer
+/vendor
+
 # Files that will be ignored by Git
 .git
+.sublime-project
+.sublime-workspace
 
 # Windows files that will be ignored by Git
 Thumbs.db
@@ -8,7 +15,3 @@ Desktop.ini
 
 # Mac OS files that will be ignored by Git
 .DS_Store
-
-# Sublime Text files that will be ignored by Git
-*.sublime-project
-*.sublime-workspace

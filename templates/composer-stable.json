@@ -1,0 +1,16 @@
+{
+	"repositories": [
+		{
+			"url": "https://github.com/EusebiuOprinoiu/polygon-coding-standards",
+			"type": "github"
+		}
+	],
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"require-dev": {
+		"polygon/polygon-coding-standards": "dev-master"
+	}
+}

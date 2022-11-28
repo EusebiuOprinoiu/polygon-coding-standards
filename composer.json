@@ -1,0 +1,21 @@
+{
+	"name": "polygon/polygon-coding-standards",
+	"description": "PHP CodeSniffer rules for WordPress projects",
+	"keywords" : [ "phpcs", "standards", "static analysis", "wordpress" ],
+	"type": "phpcodesniffer-standard",
+	"version": "dev-master",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Eusebiu Oprinoiu",
+			"homepage": "https://eusebiu.com"
+		}
+	],
+	"require": {
+		"squizlabs/php_codesniffer" : "*",
+		"dealerdirect/phpcodesniffer-composer-installer": "*",
+		"phpcompatibility/phpcompatibility-wp": "*",
+		"wp-coding-standards/wpcs": "*"
+	},
+	"prefer-stable": true
+}

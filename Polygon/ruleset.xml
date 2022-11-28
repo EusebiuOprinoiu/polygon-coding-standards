@@ -1,7 +1,17 @@
 <?xml version="1.0"?>
-<ruleset name="WordPress-Custom">
+<ruleset name="Polygon">
 	<description>Custom WordPress Coding Standards</description>
 
+	<!-- Ignore third-party code -->
+	<exclude-pattern>*/bower-components/*</exclude-pattern>
+	<exclude-pattern>*/third-party/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+
+	<!-- Ignore certain file types -->
+	<exclude-pattern>*\.css</exclude-pattern>
+	<exclude-pattern>*\.js</exclude-pattern>
+
+	<!-- Load the WordPress ruleset. -->
 	<rule ref="WordPress">
 		<!-- Exclude rule for Yoda conditions -->
 		<exclude name="WordPress.PHP.YodaConditions.NotYoda"/>
@@ -21,4 +31,10 @@
 		<!-- Exclude rule for multiple empty lines after the file comment -->
 		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
 	</rule>
+
+	<!-- Load the PHP Compatibility ruleset. -->
+	<rule ref="PHPCompatibilityWP"/>
+
+	<!-- Check PHP compatibility. -->
+	<config name="testVersion" value="7.2-"/>
 </ruleset>
