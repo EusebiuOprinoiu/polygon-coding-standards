@@ -12,5 +12,8 @@
 	},
 	"require-dev": {
 		"polygon/polygon-coding-standards": "dev-master"
-	}
+	},
+
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }

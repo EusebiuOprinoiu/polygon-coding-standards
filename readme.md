@@ -29,6 +29,9 @@ The code standards can be installed via Composer. If you want a stable configura
 ```
 composer global config repositories.polygon-coding-standards github https://github.com/EusebiuOprinoiu/polygon-coding-standards
 composer global config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+composer global config minimum-stability dev
+composer global config prefer-stable true
+
 composer global require --dev "polygon/polygon-coding-standards:dev-master"
 ```
 
@@ -49,7 +52,10 @@ As an alternative, you can copy and paste the following `composer.json` configur
 	},
 	"require-dev": {
 		"polygon/polygon-coding-standards": "dev-master"
-	}
+	},
+
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
 ```
 
@@ -64,7 +70,7 @@ composer global config minimum-stability dev
 composer global config prefer-stable true
 
 composer global require --dev "polygon/polygon-coding-standards:dev-master"
-composer global require --dev "wp-coding-standards/wpcs:dev-develop as 2.99.99"
+composer global require --dev "wp-coding-standards/wpcs:dev-develop as 3.99.99"
 composer global require --dev "phpcompatibility/php-compatibility:dev-develop as 9.99.99"
 ```
 
@@ -85,7 +91,7 @@ As an alternative, you can copy and paste the following `composer.json` configur
 	},
 	"require-dev": {
 		"polygon/polygon-coding-standards": "dev-master",
-		"wp-coding-standards/wpcs": "dev-develop as 2.99.99",
+		"wp-coding-standards/wpcs": "dev-develop as 3.99.99",
 		"phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
 	},
 
