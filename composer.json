@@ -13,10 +13,12 @@
 	],
 	"require": {
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
-		"phpcompatibility/php-compatibility": "dev-develop as 9.99.99",
 		"phpcompatibility/phpcompatibility-wp": "*",
 		"sirbrillig/phpcs-variable-analysis": "*",
 		"wp-coding-standards/wpcs": "*"
+	},
+	"require-dev": {
+		"phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
 	},
 	"scripts": {
 		"config-cs": [
