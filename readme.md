@@ -113,8 +113,7 @@ If you would like to set `Polygon` as your default conding standard, add the sec
 		"phpcs-config": [
 			"phpcs --config-set default_standard Polygon"
 		],
-		"post-install-cmd": "@phpcs-config",
-		"post-update-cmd": "@phpcs-config"
+		"post-install-cmd": "@phpcs-config"
 	}
 }
 ```
