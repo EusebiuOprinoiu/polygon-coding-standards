@@ -17,15 +17,15 @@
 	<exclude-pattern>*/tests/*</exclude-pattern>
 
 	<!-- Ignore certain file types -->
-	<exclude-pattern>*\.min.css</exclude-pattern>
-	<exclude-pattern>*\.min.js</exclude-pattern>
+	<exclude-pattern>*/.min.css</exclude-pattern>
+	<exclude-pattern>*/.min.js</exclude-pattern>
 
 	<!-- Customize how PHPCS works -->
-	<arg value="sp"/>                       <!-- Show sniff and progress -->
-	<arg name="colors"/>                    <!-- Show results with colors -->
-	<arg name="parallel" value="12"/>       <!-- Enable parallel processing for faster results. -->
-	<arg name="basepath" value="./"/>       <!-- Strip the file paths down to the relevant bit -->
-	<arg name="extensions" value="php"/>    <!-- A comma separated list of file extensions to check -->
+	<arg value="sp"/>                                <!-- Show sniff and progress -->
+	<arg name="colors"/>                             <!-- Show results with colors -->
+	<arg name="parallel" value="12"/>                <!-- Enable parallel processing for faster results. -->
+	<arg name="basepath" value="./"/>                <!-- Strip the file paths down to the relevant bit -->
+	<arg name="extensions" value="php, css, js"/>    <!-- A comma separated list of file extensions to check -->
 
 	<!-- Load the WordPress ruleset. -->
 	<rule ref="WordPress">
@@ -46,10 +46,13 @@
 
 		<!-- Exclude rule for multiple empty lines after the file comment -->
 		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
-	</rule>
 
-	<!-- Load the Variable Analysis ruleset. -->
-	<rule ref="VariableAnalysis"/>
+		<!-- Exclude rule for strict file name conevtions -->
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase">
+			<!-- Ignore for files that have the version number in the file name. -->
+			<exclude-pattern>*/updates/*</exclude-pattern>
+		</exclude>
+	</rule>
 
 	<!-- Load the PHP Compatibility ruleset. -->
 	<rule ref="PHPCompatibilityWP"/>
