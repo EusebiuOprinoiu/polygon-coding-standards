@@ -53,13 +53,6 @@ As an alternative, you can copy and paste the following `composer.json` configur
 	"require-dev": {
 		"polygon/polygon-coding-standards": "dev-master"
 	},
-	"scripts": {
-		"phpcs-config": [
-			"phpcs --config-set default_standard Polygon"
-		],
-		"post-install-cmd": "@phpcs-config",
-		"post-update-cmd": "@phpcs-config"
-	},
 
 	"minimum-stability": "dev",
 	"prefer-stable": true
@@ -101,16 +94,25 @@ As an alternative, you can copy and paste the following `composer.json` configur
 		"wp-coding-standards/wpcs": "dev-develop as 3.99.99",
 		"phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
 	},
+
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
+```
+
+## Set Default Coding Standards
+
+If you would like to set `Polygon` as your default conding standard, add the section below to your `composer.json` file.
+
+```JSON
+{
 	"scripts": {
 		"phpcs-config": [
 			"phpcs --config-set default_standard Polygon"
 		],
 		"post-install-cmd": "@phpcs-config",
 		"post-update-cmd": "@phpcs-config"
-	},
-
-	"minimum-stability": "dev",
-	"prefer-stable": true
+	}
 }
 ```
 
