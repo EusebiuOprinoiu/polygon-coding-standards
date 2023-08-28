@@ -4,8 +4,14 @@
 
 	<!-- Ignore third-party code -->
 	<exclude-pattern>*/bower-components/*</exclude-pattern>
+	<exclude-pattern>*/node-modules/*</exclude-pattern>
 	<exclude-pattern>*/third-party/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
+
+	<!-- Ignore folders with assets and binaries -->
+	<exclude-pattern>*/languages/*</exclude-pattern>
+	<exclude-pattern>*/assets/*</exclude-pattern>
+	<exclude-pattern>*/tests/*</exclude-pattern>
 
 	<!-- Ignore certain file types -->
 	<exclude-pattern>*\.css</exclude-pattern>
