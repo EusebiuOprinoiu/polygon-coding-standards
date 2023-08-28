@@ -103,7 +103,7 @@ As an alternative, you can copy and paste the following `composer.json` configur
 }
 ```
 
-## Set Default Coding Standards
+## Set Default Ruleset
 
 If you would like to set `Polygon` as your default conding standard, add the section below to your configuration.
 
