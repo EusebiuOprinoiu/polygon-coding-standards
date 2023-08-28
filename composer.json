@@ -17,9 +17,6 @@
 		"sirbrillig/phpcs-variable-analysis": "*",
 		"wp-coding-standards/wpcs": "*"
 	},
-	"require-dev": {
-		"phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
-	},
 	"scripts": {
 		"config-cs": [
 			"\"vendor/bin/phpcs\" --config-set default_standard Polygon"
