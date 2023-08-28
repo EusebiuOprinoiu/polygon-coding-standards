@@ -14,7 +14,6 @@
 	"require": {
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
 		"phpcompatibility/phpcompatibility-wp": "*",
-		"sirbrillig/phpcs-variable-analysis": "*",
 		"wp-coding-standards/wpcs": "*"
 	},
 	"scripts": {

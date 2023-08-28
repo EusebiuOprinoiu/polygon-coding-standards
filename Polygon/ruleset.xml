@@ -32,9 +32,6 @@
 		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
 	</rule>
 
-	<!-- Load the Variable Analysis ruleset. -->
-	<rule ref="VariableAnalysis"/>
-
 	<!-- Load the PHP Compatibility ruleset. -->
 	<rule ref="PHPCompatibilityWP"/>
 
