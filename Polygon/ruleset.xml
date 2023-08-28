@@ -17,8 +17,8 @@
 	<exclude-pattern>*/tests/*</exclude-pattern>
 
 	<!-- Ignore certain file types -->
-	<exclude-pattern>*\.css</exclude-pattern>
-	<exclude-pattern>*\.js</exclude-pattern>
+	<exclude-pattern>*\.min.css</exclude-pattern>
+	<exclude-pattern>*\.min.js</exclude-pattern>
 
 	<!-- Load the WordPress ruleset. -->
 	<rule ref="WordPress">
@@ -40,6 +40,9 @@
 		<!-- Exclude rule for multiple empty lines after the file comment -->
 		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
 	</rule>
+
+	<!-- Load the Variable Analysis ruleset. -->
+	<rule ref="VariableAnalysis"/>
 
 	<!-- Load the PHP Compatibility ruleset. -->
 	<rule ref="PHPCompatibilityWP"/>

@@ -14,14 +14,23 @@
 	"require": {
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
 		"phpcompatibility/phpcompatibility-wp": "*",
+		"sirbrillig/phpcs-variable-analysis": "*",
 		"wp-coding-standards/wpcs": "*"
 	},
 	"scripts": {
+		"install-cs": [
+			"Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+		],
 		"config-cs": [
 			"\"vendor/bin/phpcs\" --config-set default_standard Polygon"
 		],
 		"post-install-cmd": "@config-cs",
 		"post-update-cmd": "@config-cs"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
 	},
 
 	"minimum-stability": "dev",
