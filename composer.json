@@ -15,6 +15,7 @@
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
 		"phpcompatibility/phpcompatibility-wp": "*",
 		"sirbrillig/phpcs-variable-analysis": "*",
+		"roave/security-advisories": "*",
 		"wp-coding-standards/wpcs": "*"
 	},
 	"scripts": {
