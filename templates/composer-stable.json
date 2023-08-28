@@ -13,6 +13,13 @@
 	"require-dev": {
 		"polygon/polygon-coding-standards": "dev-master"
 	},
+	"scripts": {
+		"phpcs-config": [
+			"phpcs --config-set default_standard Polygon"
+		],
+		"post-install-cmd": "@phpcs-config",
+		"post-update-cmd": "@phpcs-config"
+	},
 
 	"minimum-stability": "dev",
 	"prefer-stable": true

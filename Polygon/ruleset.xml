@@ -35,17 +35,23 @@
 		<!-- Exclude rule for missing translators comment -->
 		<exclude name="WordPress.WP.I18n.MissingTranslatorsComment"/>
 
-		<!-- Exclude rule for custom code indentation -->
+		<!-- Exclude rule for incorrect indentation for PHP/HTML-->
 		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact"/>
 
 		<!-- Exclude rule for multiple php statements on the same line -->
 		<exclude name="Generic.Formatting.DisallowMultipleStatements.SameLine"/>
 
-		<!-- Exclude rule for multiple empty lines in functions -->
+		<!-- Exclude rule for multiple empty lines in methods and functions -->
 		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines"/>
 
 		<!-- Exclude rule for multiple empty lines after the file comment -->
 		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
+
+		<!-- Exclude rule for lonely if statements. Do not enforce elseif. -->
+		<exclude name="Universal.ControlStructures.DisallowLonelyIf.Found"/>
+
+		<!-- Exclude rule for stand-alone post-increment statements. Do not enforce pre-increment. -->
+		<exclude name="Universal.Operators.DisallowStandalonePostIncrementDecrement.PostIncrementFound"/>
 
 		<!-- Exclude rule for strict file name conevtions -->
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase">
