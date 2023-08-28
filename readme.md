@@ -121,9 +121,7 @@ If you would like to set `Polygon` as your default conding standard, add the sec
 
 ## Add to Your Projects
 
-Use the coding standards in your projects by creating a file named `phpcs.xml` or `.phpcs.xml` with the content below.
-
-Extend the rules as needed by adding additional rules to this file.
+Use the coding standards in your projects by creating a file named `phpcs.xml` or `.phpcs.xml` with the content below. Extend the rules as needed by adding additional rules to this file.
 
 ```XML
 <?xml version="1.0"?>
