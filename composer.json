@@ -19,9 +19,6 @@
 		"wp-coding-standards/wpcs": "*"
 	},
 	"scripts": {
-		"install-cs": [
-			"Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
-		],
 		"config-cs": [
 			"\"vendor/bin/phpcs\" --config-set default_standard Polygon"
 		],

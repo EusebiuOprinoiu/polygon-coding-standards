@@ -99,3 +99,18 @@ As an alternative, you can copy and paste the following `composer.json` configur
 	"prefer-stable": true
 }
 ```
+
+## Add to Your Projects
+
+Use the coding standards in your projects by creating a file named `phpcs.xml` or `.phpcs.xml` with the content below.
+
+Extend the rules as needed by adding additional rules to this file.
+
+```XML
+<?xml version="1.0"?>
+<ruleset name="Polygon Project Name">
+	<description>Custom WordPress Coding Standards for Polygon Project Name</description>
+
+    <rule ref="Polygon"/>
+</ruleset>
+````
