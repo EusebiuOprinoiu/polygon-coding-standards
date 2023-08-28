@@ -10,6 +10,9 @@ The following rules are ignored:
 - Line indented incorrectly; expected X tabs, found Y
 - Functions must not contain multiple empty lines in a row
 - There must be exactly one empty line after the file comment
+- Stand-alone post-increment statement found. Use pre-increment instead: ++$variable.
+- If control structure block found as the only statement within an "else" block. Use elseif instead.
+- Filenames should be all lowercase with hyphens as word separators (disabled only for filenames that contain version numbers)
 
 If you need to disable or exclude certain rules while writing code, use the following comments:
 
@@ -102,7 +105,7 @@ As an alternative, you can copy and paste the following `composer.json` configur
 
 ## Set Default Coding Standards
 
-If you would like to set `Polygon` as your default conding standard, add the section below to your `composer.json` file.
+If you would like to set `Polygon` as your default conding standard, add the section below to your configuration.
 
 ```JSON
 {
