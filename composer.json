@@ -11,11 +11,6 @@
 			"homepage": "https://eusebiu.com"
 		}
 	],
-	"config": {
-		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true
-		}
-	},
 	"require": {
 		"dealerdirect/phpcodesniffer-composer-installer": "*",
 		"phpcompatibility/phpcompatibility-wp": "*",
