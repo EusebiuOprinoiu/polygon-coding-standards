@@ -112,14 +112,13 @@ You should also call the PHPCS Composer Installer plugin during development or i
 ```JSON
 {
 	"scripts": {
-		"phpcs-install": [
-			"PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
-		],
-		"phpcs-config": [
-			"phpcs --config-set default_standard Polygon"
-		],
-		"post-install-cmd": [ "@phpcs-install", "@phpcs-config" ],
-		"post-update-cmd": [ "@phpcs-install", "@phpcs-config" ]
+		"phpcs-install": "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+		"phpcs-default": "vendor/bin/phpcs --config-set default_standard Polygon",
+		"phpcs-check": "vendor/bin/phpcs",
+		"phpcs-fix": "vendor/bin/phpcbf",
+
+		"post-install-cmd": [ "@phpcs-install", "@phpcs-default" ],
+		"post-update-cmd": [ "@phpcs-install", "@phpcs-default" ]
 	}
 }
 ```
@@ -133,6 +132,14 @@ Use the coding standards in your projects by creating a file named `phpcs.xml` o
 <ruleset name="Polygon Project Name">
 	<description>Custom WordPress Coding Standards for Polygon Project Name</description>
 
+	<!-- Customize how PHPCS works -->
+	<arg value="sp"/>                                <!-- Show sniff and progress -->
+	<arg name="colors"/>                             <!-- Show results with colors -->
+	<arg name="parallel" value="12"/>                <!-- Enable parallel processing for faster results. -->
+	<arg name="basepath" value="../"/>               <!-- Strip the file paths down to the relevant bit -->
+	<arg name="extensions" value="php, css, js"/>    <!-- A comma separated list of file extensions to check -->
+
+	<!-- Load the Polygon ruleset. -->
     <rule ref="Polygon"/>
 </ruleset>
 ````
