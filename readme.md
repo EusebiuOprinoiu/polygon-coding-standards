@@ -113,16 +113,14 @@ You should also call the PHPCS Composer Installer plugin during development or i
 {
 	"scripts": {
 		"phpcs-install": [
-			"PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+			"PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
 		],
 		"phpcs-config": [
 			"phpcs --config-set default_standard Polygon"
 		],
-		"post-install-cmd": [
-			"@phpcs-install",
-			"@phpcs-config"
-		]
-	},
+		"post-install-cmd": [ "@phpcs-install", "@phpcs-config" ],
+		"post-update-cmd": [ "@phpcs-install", "@phpcs-config" ]
+	}
 }
 ```
 
