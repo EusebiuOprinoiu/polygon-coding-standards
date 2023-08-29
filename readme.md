@@ -125,7 +125,9 @@ You should also call the PHPCS Composer Installer plugin during development or i
 
 ## Add to Your Projects
 
-Use the coding standards in your projects by creating a file named `phpcs.xml` or `.phpcs.xml` with the content below. Extend the rules as needed by adding additional rules to this file. Some of the values below are hardcoded upstream, inside the `Polygon` ruleset.
+Use the coding standards in your projects by creating a file named `phpcs.xml` or `.phpcs.xml` with the content below. Extend the rules as needed by adding additional rules to this file.
+
+Some of the values below are hardcoded upstream, inside the `Polygon` ruleset.
 
 ```XML
 <?xml version="1.0"?>
