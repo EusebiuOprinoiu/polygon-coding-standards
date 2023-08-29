@@ -17,9 +17,9 @@
 	<exclude-pattern>*/tests/*</exclude-pattern>
 
 	<!-- Ignore certain file types -->
-	<exclude-pattern>*/.min.css</exclude-pattern>
-	<exclude-pattern>*/.min.js</exclude-pattern>
-	<exclude-pattern>*/.min.ts</exclude-pattern>
+	<exclude-pattern>*.min.css</exclude-pattern>
+	<exclude-pattern>*.min.js</exclude-pattern>
+	<exclude-pattern>*.min.ts</exclude-pattern>
 
 	<!-- Customize how PHPCS works -->
 	<arg value="sp"/>                       <!-- Show sniff and progress -->
@@ -56,7 +56,7 @@
 
 	<!-- Exclude rule for strict file name conevtions -->
 	<rule ref="WordPress.Files.FileName.NotHyphenatedLowercase">
-		<!-- Ignore for files that have the version number in the file name. -->
+		<!-- Ignore files that have the version number in the file name. -->
 		<exclude-pattern>*/updates/*</exclude-pattern>
 	</rule>
 
