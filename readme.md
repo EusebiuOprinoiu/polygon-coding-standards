@@ -107,14 +107,22 @@ As an alternative, you can copy and paste the following `composer.json` configur
 
 If you would like to set `Polygon` as your default conding standard, add the section below to your configuration.
 
+You should also call the PHPCS Composer Installer plugin during development or in CI environments.
+
 ```JSON
 {
 	"scripts": {
+		"phpcs-install": [
+			"PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+		],
 		"phpcs-config": [
 			"phpcs --config-set default_standard Polygon"
 		],
-		"post-install-cmd": "@phpcs-config"
-	}
+		"post-install-cmd": [
+			"@phpcs-install",
+			"@phpcs-config"
+		]
+	},
 }
 ```
 

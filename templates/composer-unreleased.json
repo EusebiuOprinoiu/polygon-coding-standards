@@ -16,10 +16,16 @@
 		"phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
 	},
 	"scripts": {
+		"phpcs-install": [
+			"PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+		],
 		"phpcs-config": [
 			"phpcs --config-set default_standard Polygon"
 		],
-		"post-install-cmd": "@phpcs-config"
+		"post-install-cmd": [
+			"@phpcs-install",
+			"@phpcs-config"
+		]
 	},
 
 	"minimum-stability": "dev",
