@@ -133,11 +133,11 @@ Use the coding standards in your projects by creating a file named `phpcs.xml` o
 	<description>Custom WordPress Coding Standards for Polygon Project Name</description>
 
 	<!-- Customize how PHPCS works -->
-	<arg value="sp"/>                                <!-- Show sniff and progress -->
-	<arg name="colors"/>                             <!-- Show results with colors -->
-	<arg name="parallel" value="12"/>                <!-- Enable parallel processing for faster results. -->
-	<arg name="basepath" value="../"/>               <!-- Strip the file paths down to the relevant bit -->
-	<arg name="extensions" value="php, css, js"/>    <!-- A comma separated list of file extensions to check -->
+	<arg value="sp"/>                       <!-- Show sniff and progress -->
+	<arg name="colors"/>                    <!-- Show results with colors -->
+	<arg name="parallel" value="25"/>       <!-- Enable parallel processing for faster results. -->
+	<arg name="basepath" value="./"/>       <!-- Strip the file paths down to the relevant bit -->
+	<arg name="extensions" value="php"/>    <!-- A comma separated list of file extensions to check -->
 
 	<!-- Load the Polygon ruleset. -->
     <rule ref="Polygon"/>
