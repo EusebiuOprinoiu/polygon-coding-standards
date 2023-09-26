@@ -1,17 +1,48 @@
-# Folders that will be ignored by Git
-/third-party
-/composer
-/vendor
+# ============================================================
+# Ignore OS files.
+# OS files and folders that Git should ignore.
+# ============================================================
 
-# Files that will be ignored by Git
-.git
-.sublime-project
-.sublime-workspace
-
-# Windows files that will be ignored by Git
-Thumbs.db
-ehthumbs.db
+# Windows Junk
+$RECYCLE.BIN
 Desktop.ini
+Thumbs.db
 
-# Mac OS files that will be ignored by Git
+# macOS Junk
 .DS_Store
+.Trashes
+
+# Others
+*.env
+*.tmp
+*.bak
+*.log
+*~
+
+
+
+
+
+# ============================================================
+# Ignore build assets.
+# Development files and folders that Git should ignore.
+# ============================================================
+
+# Code Editors
+.idea
+.vscode
+.project
+.settings
+
+# Package Managers
+node_modules
+bower_components
+
+# Development Folders
+**/third-party/*
+!**/third-party/composer
+!**/third-party/autoload.php
+!**/third-party/package-name
+
+# Github Specific Files
+!.gitkeep
