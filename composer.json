@@ -3,8 +3,7 @@
 	"description": "PHP CodeSniffer rules for WordPress projects",
 	"keywords": [ "phpcs", "standards", "static analysis", "wordpress" ],
 	"type": "phpcodesniffer-standard",
-	"version": "dev-master",
-	"license": "MIT",
+	"license": "GPL-3.0-or-later",
 	"authors": [
 		{
 			"name": "Eusebiu Oprinoiu",

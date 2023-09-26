@@ -5,11 +5,6 @@
 			"type": "github"
 		}
 	],
-	"config": {
-		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true
-		}
-	},
 	"require-dev": {
 		"polygon/polygon-coding-standards": "dev-master",
 		"wp-coding-standards/wpcs": "dev-develop as 3.99.99",
@@ -23,6 +18,11 @@
 
 		"post-install-cmd": [ "@phpcs-install", "@phpcs-default" ],
 		"post-update-cmd": [ "@phpcs-install", "@phpcs-default" ]
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
 	},
 
 	"minimum-stability": "dev",
