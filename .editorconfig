@@ -1,3 +1,8 @@
+# ============================================================
+# Editor settings.
+# Enforce the same editor settings for all developers.
+# ============================================================
+
 # Set as project root.
 root = true
 
