@@ -5,7 +5,10 @@
 	<!-- Ignore third-party code -->
 	<exclude-pattern>*/bower-components/*</exclude-pattern>
 	<exclude-pattern>*/node-modules/*</exclude-pattern>
+	<exclude-pattern>*/packages-prefix/*</exclude-pattern>
+	<exclude-pattern>*/vendor-prefix/*</exclude-pattern>
 	<exclude-pattern>*/third-party/*</exclude-pattern>
+	<exclude-pattern>*/packages/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
 
 	<!-- Ignore binaries and development folders -->
