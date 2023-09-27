@@ -7,7 +7,6 @@
 	],
 	"require-dev": {
 		"polygon/polygon-coding-standards": "dev-master",
-		"wp-coding-standards/wpcs": "dev-develop as 3.99.99",
 		"phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
 	},
 	"scripts": {

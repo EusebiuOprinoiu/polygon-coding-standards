@@ -116,9 +116,17 @@ You should also call the PHPCS Composer Installer plugin during development or i
 		"phpcs-default": "vendor/bin/phpcs --config-set default_standard Polygon",
 		"phpcs-check": "vendor/bin/phpcs",
 		"phpcs-fix": "vendor/bin/phpcbf",
+		"phpcbf": "vendor/bin/phpcbf",
+		"phpcs": "vendor/bin/phpcs",
 
-		"post-install-cmd": [ "@phpcs-install", "@phpcs-default" ],
-		"post-update-cmd": [ "@phpcs-install", "@phpcs-default" ]
+		"post-install-cmd": [
+			"composer phpcs-install --quiet",
+			"composer phpcs-default --quiet"
+		],
+		"post-update-cmd": [
+			"composer phpcs-install --quiet",
+			"composer phpcs-default --quiet"
+		]
 	}
 }
 ```

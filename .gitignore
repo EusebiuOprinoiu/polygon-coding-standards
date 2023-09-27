@@ -1,32 +1,18 @@
 # ============================================================
-# Ignore OS files.
-# OS files and folders that Git should ignore.
+# Ignore ruleset.
+# Files and folders that Git should exclude from Git.
 # ============================================================
 
-# Windows Junk
-$RECYCLE.BIN
-Desktop.ini
-Thumbs.db
-
-# macOS Junk
-.DS_Store
-.Trashes
-
-# Others
+# Files
 *.env
 *.tmp
-*.bak
 *.log
-*~
 
-
-
-
-
-# ============================================================
-# Ignore build assets.
-# Development files and folders that Git should ignore.
-# ============================================================
+# OS Junk
+*.Trashes
+*.DS_Store
+Thumbs.db
+Desktop.ini
 
 # Code Editors
 .idea
@@ -35,13 +21,11 @@ Thumbs.db
 .settings
 
 # Package Managers
+vendor
+packages
+third-party
 node_modules
 bower_components
-
-# Development Folders
-**/third-party/*
-!**/third-party/composer
-!**/third-party/autoload.php
 
 # Github Specific Files
 !.gitkeep
