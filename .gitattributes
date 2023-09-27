@@ -238,3 +238,6 @@
 package.json   export-ignore
 composer.json  export-ignore
 composer.lock  export-ignore
+
+# Binaries and Task Runners
+/config/
