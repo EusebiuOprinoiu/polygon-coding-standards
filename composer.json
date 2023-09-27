@@ -1,55 +1,55 @@
 {
-	"name": "polygon/polygon-coding-standards",
-	"description": "PHP CodeSniffer rules for WordPress projects",
-	"keywords": [ "phpcs", "standards", "static analysis", "wordpress" ],
-	"license": "GPL-3.0-or-later",
-	"type": "phpcodesniffer-standard",
+  "name": "polygon/polygon-coding-standards",
+  "description": "PHP CodeSniffer rules for WordPress projects",
+  "keywords": [ "phpcs", "standards", "static analysis", "wordpress" ],
+  "license": "GPL-3.0-or-later",
+  "type": "phpcodesniffer-standard",
 
-	"homepage": "https://polygonthemes.com",
-	"support": {
-		"source": "https://github.com/EusebiuOprinoiu/polygon-coding-standards",
-		"issues": "https://github.com/EusebiuOprinoiu/polygon-coding-standards/issues"
-	},
-	"authors": [
-		{
-			"name": "Eusebiu Oprinoiu",
-			"homepage": "https://eusebiu.com"
-		}
-	],
+  "homepage": "https://polygonthemes.com",
+  "support": {
+    "source": "https://github.com/EusebiuOprinoiu/polygon-coding-standards",
+    "issues": "https://github.com/EusebiuOprinoiu/polygon-coding-standards/issues"
+  },
+  "authors": [
+    {
+      "name": "Eusebiu Oprinoiu",
+      "homepage": "https://eusebiu.com"
+    }
+  ],
 
 
 
-	"require": {
-		"dealerdirect/phpcodesniffer-composer-installer": "*",
-		"phpcompatibility/phpcompatibility-wp": "*",
-		"roave/security-advisories": "*",
-		"wp-coding-standards/wpcs": "*",
-		"php": ">=7.4"
-	},
-	"scripts": {
-		"phpcs-install": "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
-		"phpcs-default": "third-party/bin/phpcs --config-set default_standard Polygon",
-		"phpcs-check": "third-party/bin/phpcs",
-		"phpcs-fix": "third-party/bin/phpcbf",
-		"phpcbf": "third-party/bin/phpcbf",
-		"phpcs": "third-party/bin/phpcs",
+  "require": {
+    "dealerdirect/phpcodesniffer-composer-installer": "*",
+    "phpcompatibility/phpcompatibility-wp": "*",
+    "roave/security-advisories": "*",
+    "wp-coding-standards/wpcs": "*",
+    "php": ">=7.4"
+  },
+  "scripts": {
+    "phpcs-install": "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+    "phpcs-default": "third-party/bin/phpcs --config-set default_standard Polygon",
+    "phpcs-check": "third-party/bin/phpcs",
+    "phpcs-fix": "third-party/bin/phpcbf",
+    "phpcbf": "third-party/bin/phpcbf",
+    "phpcs": "third-party/bin/phpcs",
 
-		"post-install-cmd": [
-			"composer phpcs-install --quiet",
-			"composer phpcs-default --quiet"
-		],
-		"post-update-cmd": [
-			"composer phpcs-install --quiet",
-			"composer phpcs-default --quiet"
-		]
-	},
-	"config": {
-		"vendor-dir": "third-party",
-		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true
-		}
-	},
+    "post-install-cmd": [
+      "composer phpcs-install --quiet",
+      "composer phpcs-default --quiet"
+    ],
+    "post-update-cmd": [
+      "composer phpcs-install --quiet",
+      "composer phpcs-default --quiet"
+    ]
+  },
+  "config": {
+    "vendor-dir": "third-party",
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
 
-	"minimum-stability": "dev",
-	"prefer-stable": true
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

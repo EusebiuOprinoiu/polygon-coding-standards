@@ -1,36 +1,36 @@
 {
-	"repositories": [
-		{
-			"url": "https://github.com/EusebiuOprinoiu/polygon-coding-standards",
-			"type": "github"
-		}
-	],
-	"require-dev": {
-		"polygon/polygon-coding-standards": "dev-master"
-	},
-	"scripts": {
-		"phpcs-install": "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
-		"phpcs-default": "vendor/bin/phpcs --config-set default_standard Polygon",
-		"phpcs-check": "vendor/bin/phpcs",
-		"phpcs-fix": "vendor/bin/phpcbf",
-		"phpcbf": "vendor/bin/phpcbf",
-		"phpcs": "vendor/bin/phpcs",
+  "repositories": [
+    {
+      "url": "https://github.com/EusebiuOprinoiu/polygon-coding-standards",
+      "type": "github"
+    }
+  ],
+  "require-dev": {
+    "polygon/polygon-coding-standards": "dev-master"
+  },
+  "scripts": {
+    "phpcs-install": "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+    "phpcs-default": "vendor/bin/phpcs --config-set default_standard Polygon",
+    "phpcs-check": "vendor/bin/phpcs",
+    "phpcs-fix": "vendor/bin/phpcbf",
+    "phpcbf": "vendor/bin/phpcbf",
+    "phpcs": "vendor/bin/phpcs",
 
-		"post-install-cmd": [
-			"composer phpcs-install --quiet",
-			"composer phpcs-default --quiet"
-		],
-		"post-update-cmd": [
-			"composer phpcs-install --quiet",
-			"composer phpcs-default --quiet"
-		]
-	},
-	"config": {
-		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true
-		}
-	},
+    "post-install-cmd": [
+      "composer phpcs-install --quiet",
+      "composer phpcs-default --quiet"
+    ],
+    "post-update-cmd": [
+      "composer phpcs-install --quiet",
+      "composer phpcs-default --quiet"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
 
-	"minimum-stability": "dev",
-	"prefer-stable": true
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
