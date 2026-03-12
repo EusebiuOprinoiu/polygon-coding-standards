@@ -234,6 +234,7 @@
 *yarn*         export-ignore
 *babel*        export-ignore
 *bower*        export-ignore
+*grunt*        export-ignore
 *prepros*      export-ignore
 package.json   export-ignore
 composer.json  export-ignore
