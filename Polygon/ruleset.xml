@@ -67,5 +67,5 @@
 	<rule ref="PHPCompatibilityWP"/>
 
 	<!-- Check PHP compatibility. -->
-	<config name="testVersion" value="7.4-"/>
+	<config name="testVersion" value="8.5-"/>
 </ruleset>

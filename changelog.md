@@ -1,6 +1,7 @@
 #### Version 1.3.0
 - Packages are now restricted to specific versions to prevent conflicts
 - Composer.json templates updated
+- Check PHP 8.5 compatibility
 
 #### Version 1.2.0
 - Additional folders excluded
