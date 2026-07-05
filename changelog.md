@@ -1,3 +1,7 @@
+#### Version 1.3.0
+- Packages are now restricted to specific versions to prevent conflicts
+- Composer.json templates updated
+
 #### Version 1.2.0
 - Additional folders excluded
 - Additional details in composer.json

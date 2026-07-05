@@ -7,7 +7,7 @@
   ],
   "require-dev": {
     "polygon/polygon-coding-standards": "dev-master",
-    "phpcompatibility/php-compatibility": "dev-develop as 9.99.99"
+    "phpcompatibility/php-compatibility": "dev-develop"
   },
   "scripts": {
     "phpcs-install": "PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
